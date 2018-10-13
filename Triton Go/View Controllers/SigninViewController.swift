@@ -11,32 +11,37 @@ import GoogleSignIn
 
 class SignInViewController: UIViewController, GIDSignInUIDelegate {
   
+  let appDelegate = UIApplication.shared.delegate as! AppDelegate
+  
+  
   func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
     if let error = error {
       print("\(error.localizedDescription)")
     } else {
-      // Perform any operations on signed in user here.
       
-      let userId = user.userID                  // For client-side use only!
-      let idToken = user.authentication.idToken // Safe to send to the server
-      let fullName = user.profile.name
-      let givenName = user.profile.givenName
-      let familyName = user.profile.familyName
-      let email = user.profile.email
-      // ...
-      print("!!! \(email)")
+      
+      appDelegate.googlUser = user
+      
+      performSegue(withIdentifier: "googleLoggedIn", sender: nil)
     }
   }
   
+  @IBAction func signin(_ sender: Any) {
+    GIDSignIn.sharedInstance()?.signIn()
+  }
   
-  @IBOutlet weak var signInButton: GIDSignInButton!
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     GIDSignIn.sharedInstance().uiDelegate = self
     
+    if ((GIDSignIn.sharedInstance()?.currentUser) != nil) {
+      print("Yo!!!")
+      performSegue(withIdentifier: "googleLoggedIn", sender: nil)
+    }
     
   }
+  
   
 }

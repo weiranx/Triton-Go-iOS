@@ -7,24 +7,50 @@
 //
 
 import UIKit
+import PhoneNumberFormatter
 
-class AskPhoneNumViewController: UIViewController {
+class AskPhoneNumViewController: UIViewController, UITextFieldDelegate  {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+  @IBOutlet weak var promptLabel: UILabel!
+  
+  @IBOutlet weak var phoneNumInput: UITextField!
+  
 
-        // Do any additional setup after loading the view.
+  
+  
+  let appDelegate = UIApplication.shared.delegate as! AppDelegate
+  
+  override func viewDidLoad() {
+    
+    super.viewDidLoad()
+    
+    phoneNumInput.delegate = self
+    
+    let firstName = appDelegate.googlUser?.profile.givenName ?? "New User"
+    promptLabel.text = "Hey, \(firstName). We need some more infomation about you"
+    
+  }
+  
+  
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    
+    if (textField.text?.range(of: "\\(?([0-9]{3})\\)?([ .-]?)([0-9]{3})\\2([0-9]{4})", options: .regularExpression, range: nil, locale: nil) == nil) {
+      // wrong phone number
+      let alert = UIAlertController(title: "Invalid Phone Number", message: "Please enter a valid phone number", preferredStyle: .alert)
+      let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil) 
+      alert.addAction(alertAction)
+      present(alert, animated: true, completion: nil)
+      return true
     }
     
+    let formatter = PhoneNumberFormatter()
+    let formattedNum = formatter.string(for: textField.text ?? "")
+    
+    print("\(formattedNum)")
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+    return true
+  }
+  
+  
 }

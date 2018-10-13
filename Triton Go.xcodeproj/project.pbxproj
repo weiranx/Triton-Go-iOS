@@ -16,6 +16,7 @@
 		1644EBCC2171A7E8009FA3F5 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644EBCB2171A7E8009FA3F5 /* Trip.swift */; };
 		1644EBD02171B456009FA3F5 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644EBCF2171B456009FA3F5 /* Location.swift */; };
 		1644EBD32171C982009FA3F5 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644EBD22171C982009FA3F5 /* SigninViewController.swift */; };
+		1644EBD72171E29F009FA3F5 /* AskPhoneNumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644EBD62171E29F009FA3F5 /* AskPhoneNumViewController.swift */; };
 		A102A60139D1621C1780053B /* Pods_Triton_Go.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC48885EFB532A66BCA641A /* Pods_Triton_Go.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		1644EBCB2171A7E8009FA3F5 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		1644EBCF2171B456009FA3F5 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		1644EBD22171C982009FA3F5 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		1644EBD62171E29F009FA3F5 /* AskPhoneNumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskPhoneNumViewController.swift; sourceTree = "<group>"; };
 		4F2FEEF8747A94785EE6F2FD /* Pods-Triton Go.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Triton Go.release.xcconfig"; path = "Pods/Target Support Files/Pods-Triton Go/Pods-Triton Go.release.xcconfig"; sourceTree = "<group>"; };
 		7B77DFAB83D091955CED665D /* Pods-Triton Go.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Triton Go.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Triton Go/Pods-Triton Go.debug.xcconfig"; sourceTree = "<group>"; };
 		ACC48885EFB532A66BCA641A /* Pods_Triton_Go.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Triton_Go.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +105,7 @@
 			children = (
 				1644EBB82171A51F009FA3F5 /* MapViewController.swift */,
 				1644EBD22171C982009FA3F5 /* SigninViewController.swift */,
+				1644EBD62171E29F009FA3F5 /* AskPhoneNumViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 				1644EBB02171A51F009FA3F5 /* Frameworks */,
 				1644EBB12171A51F009FA3F5 /* Resources */,
 				7AB1067E0B00B55CE7923036 /* [CP] Embed Pods Frameworks */,
+				BBFB2A5423CF73C5F190860D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,17 +220,47 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Triton Go/Pods-Triton Go-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/HashBuilder/HashBuilder.framework",
+				"${BUILT_PRODUCTS_DIR}/PhoneNumberFormatter/PhoneNumberFormatter.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HashBuilder.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PhoneNumberFormatter.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Triton Go/Pods-Triton Go-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBFB2A5423CF73C5F190860D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Triton Go/Pods-Triton Go-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Triton Go/Pods-Triton Go-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -241,6 +275,7 @@
 				1644EBD32171C982009FA3F5 /* SigninViewController.swift in Sources */,
 				1644EBD02171B456009FA3F5 /* Location.swift in Sources */,
 				1644EBB72171A51F009FA3F5 /* AppDelegate.swift in Sources */,
+				1644EBD72171E29F009FA3F5 /* AskPhoneNumViewController.swift in Sources */,
 				1644EBCA2171A7E1009FA3F5 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
