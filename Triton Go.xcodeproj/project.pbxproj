@@ -12,6 +12,9 @@
 		1644EBBC2171A51F009FA3F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1644EBBA2171A51F009FA3F5 /* Main.storyboard */; };
 		1644EBBE2171A526009FA3F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1644EBBD2171A526009FA3F5 /* Assets.xcassets */; };
 		1644EBC12171A526009FA3F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1644EBBF2171A526009FA3F5 /* LaunchScreen.storyboard */; };
+		1644EBCA2171A7E1009FA3F5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644EBC92171A7E1009FA3F5 /* User.swift */; };
+		1644EBCC2171A7E8009FA3F5 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644EBCB2171A7E8009FA3F5 /* Trip.swift */; };
+		1644EBD02171B456009FA3F5 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644EBCF2171B456009FA3F5 /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		1644EBBD2171A526009FA3F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1644EBC02171A526009FA3F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1644EBC22171A526009FA3F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1644EBC92171A7E1009FA3F5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1644EBCB2171A7E8009FA3F5 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		1644EBCF2171B456009FA3F5 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 		1644EBB52171A51F009FA3F5 /* Triton Go */ = {
 			isa = PBXGroup;
 			children = (
+				1644EBC82171A7BF009FA3F5 /* Model */,
 				1644EBB62171A51F009FA3F5 /* AppDelegate.swift */,
 				1644EBB82171A51F009FA3F5 /* ViewController.swift */,
 				1644EBBA2171A51F009FA3F5 /* Main.storyboard */,
@@ -62,6 +69,16 @@
 				1644EBC22171A526009FA3F5 /* Info.plist */,
 			);
 			path = "Triton Go";
+			sourceTree = "<group>";
+		};
+		1644EBC82171A7BF009FA3F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1644EBC92171A7E1009FA3F5 /* User.swift */,
+				1644EBCB2171A7E8009FA3F5 /* Trip.swift */,
+				1644EBCF2171B456009FA3F5 /* Location.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1644EBCC2171A7E8009FA3F5 /* Trip.swift in Sources */,
 				1644EBB92171A51F009FA3F5 /* ViewController.swift in Sources */,
+				1644EBD02171B456009FA3F5 /* Location.swift in Sources */,
 				1644EBB72171A51F009FA3F5 /* AppDelegate.swift in Sources */,
+				1644EBCA2171A7E1009FA3F5 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
