@@ -26,6 +26,5 @@ class MapViewController: UIViewController {
     
   }
 
-
 }
 

@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  SigninViewController.swift
 //  Triton Go
 //
 //  Created by Weiran Xiong on 10/12/18.
@@ -9,14 +9,14 @@
 import UIKit
 import GoogleSignIn
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
+class SignInViewController: UIViewController, GIDSignInUIDelegate {
   
   func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
     if let error = error {
       print("\(error.localizedDescription)")
     } else {
       // Perform any operations on signed in user here.
+      
       let userId = user.userID                  // For client-side use only!
       let idToken = user.authentication.idToken // Safe to send to the server
       let fullName = user.profile.name
@@ -24,24 +24,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
       let familyName = user.profile.familyName
       let email = user.profile.email
       // ...
-      print("!!!\(email)")
+      print("!!! \(email)")
     }
   }
   
-
-  var window: UIWindow?
-
-
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
-    // Initialize sign-in
-    GIDSignIn.sharedInstance().clientID = "565347794333-a4dsnk478v5356d11c925t37qs4f3s2e.apps.googleusercontent.com"
-    GIDSignIn.sharedInstance().delegate = self
+  
+  @IBOutlet weak var signInButton: GIDSignInButton!
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
-    return true
+    GIDSignIn.sharedInstance().uiDelegate = self
+    
+    
   }
-
-
-
+  
 }
-

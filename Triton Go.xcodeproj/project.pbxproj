@@ -15,6 +15,7 @@
 		1644EBCA2171A7E1009FA3F5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644EBC92171A7E1009FA3F5 /* User.swift */; };
 		1644EBCC2171A7E8009FA3F5 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644EBCB2171A7E8009FA3F5 /* Trip.swift */; };
 		1644EBD02171B456009FA3F5 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644EBCF2171B456009FA3F5 /* Location.swift */; };
+		1644EBD32171C982009FA3F5 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644EBD22171C982009FA3F5 /* SigninViewController.swift */; };
 		A102A60139D1621C1780053B /* Pods_Triton_Go.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC48885EFB532A66BCA641A /* Pods_Triton_Go.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		1644EBC92171A7E1009FA3F5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1644EBCB2171A7E8009FA3F5 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		1644EBCF2171B456009FA3F5 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		1644EBD22171C982009FA3F5 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		4F2FEEF8747A94785EE6F2FD /* Pods-Triton Go.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Triton Go.release.xcconfig"; path = "Pods/Target Support Files/Pods-Triton Go/Pods-Triton Go.release.xcconfig"; sourceTree = "<group>"; };
 		7B77DFAB83D091955CED665D /* Pods-Triton Go.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Triton Go.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Triton Go/Pods-Triton Go.debug.xcconfig"; sourceTree = "<group>"; };
 		ACC48885EFB532A66BCA641A /* Pods_Triton_Go.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Triton_Go.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,9 +77,9 @@
 		1644EBB52171A51F009FA3F5 /* Triton Go */ = {
 			isa = PBXGroup;
 			children = (
+				1644EBD12171C96A009FA3F5 /* View Controllers */,
 				1644EBC82171A7BF009FA3F5 /* Model */,
 				1644EBB62171A51F009FA3F5 /* AppDelegate.swift */,
-				1644EBB82171A51F009FA3F5 /* MapViewController.swift */,
 				1644EBBA2171A51F009FA3F5 /* Main.storyboard */,
 				1644EBBD2171A526009FA3F5 /* Assets.xcassets */,
 				1644EBBF2171A526009FA3F5 /* LaunchScreen.storyboard */,
@@ -94,6 +96,15 @@
 				1644EBCF2171B456009FA3F5 /* Location.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1644EBD12171C96A009FA3F5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1644EBB82171A51F009FA3F5 /* MapViewController.swift */,
+				1644EBD22171C982009FA3F5 /* SigninViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		8C628D5CAEEB3D0D56CDF172 /* Pods */ = {
@@ -227,6 +238,7 @@
 			files = (
 				1644EBCC2171A7E8009FA3F5 /* Trip.swift in Sources */,
 				1644EBB92171A51F009FA3F5 /* MapViewController.swift in Sources */,
+				1644EBD32171C982009FA3F5 /* SigninViewController.swift in Sources */,
 				1644EBD02171B456009FA3F5 /* Location.swift in Sources */,
 				1644EBB72171A51F009FA3F5 /* AppDelegate.swift in Sources */,
 				1644EBCA2171A7E1009FA3F5 /* User.swift in Sources */,
