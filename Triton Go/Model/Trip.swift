@@ -7,8 +7,11 @@
 //
 
 import Foundation
+import HashBuilder
 
 class Trip {
+  
+  var id: UInt
   
   var driver: User
   var origin: Location
@@ -20,6 +23,16 @@ class Trip {
     self.origin = origin
     self.dest = dest
     self.date = date
+    
+    // building id
+    let builder = HashBuilder()
+    builder.contributeObject(driver)
+    builder.contributeObject(origin)
+    builder.contributeObject(dest)
+    builder.contributeObject(date)
+    
+    self.id = builder.builtHash
+    
   }
   
 }

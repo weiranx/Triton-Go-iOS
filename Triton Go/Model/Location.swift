@@ -7,8 +7,11 @@
 //
 
 import Foundation
+import HashBuilder
 
 class Location {
+  
+  var id: UInt
   
   var lang: Double
   var long: Double
@@ -18,6 +21,14 @@ class Location {
     self.lang = lang
     self.long = long
     self.streetName = streetName
+    
+    // building id
+    let builder = HashBuilder()
+    builder.contributeObject(lang)
+    builder.contributeObject(long)
+    builder.contributeObject(streetName)
+    
+    self.id = builder.builtHash
   }
   
 }

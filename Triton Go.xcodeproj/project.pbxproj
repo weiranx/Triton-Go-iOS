@@ -8,19 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		1644EBB72171A51F009FA3F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644EBB62171A51F009FA3F5 /* AppDelegate.swift */; };
-		1644EBB92171A51F009FA3F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644EBB82171A51F009FA3F5 /* ViewController.swift */; };
+		1644EBB92171A51F009FA3F5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644EBB82171A51F009FA3F5 /* MapViewController.swift */; };
 		1644EBBC2171A51F009FA3F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1644EBBA2171A51F009FA3F5 /* Main.storyboard */; };
 		1644EBBE2171A526009FA3F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1644EBBD2171A526009FA3F5 /* Assets.xcassets */; };
 		1644EBC12171A526009FA3F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1644EBBF2171A526009FA3F5 /* LaunchScreen.storyboard */; };
 		1644EBCA2171A7E1009FA3F5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644EBC92171A7E1009FA3F5 /* User.swift */; };
 		1644EBCC2171A7E8009FA3F5 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644EBCB2171A7E8009FA3F5 /* Trip.swift */; };
 		1644EBD02171B456009FA3F5 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644EBCF2171B456009FA3F5 /* Location.swift */; };
+		A102A60139D1621C1780053B /* Pods_Triton_Go.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC48885EFB532A66BCA641A /* Pods_Triton_Go.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1644EBB32171A51F009FA3F5 /* Triton Go.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Triton Go.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1644EBB62171A51F009FA3F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1644EBB82171A51F009FA3F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1644EBB82171A51F009FA3F5 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1644EBBB2171A51F009FA3F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1644EBBD2171A526009FA3F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1644EBC02171A526009FA3F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -28,6 +29,9 @@
 		1644EBC92171A7E1009FA3F5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1644EBCB2171A7E8009FA3F5 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		1644EBCF2171B456009FA3F5 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		4F2FEEF8747A94785EE6F2FD /* Pods-Triton Go.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Triton Go.release.xcconfig"; path = "Pods/Target Support Files/Pods-Triton Go/Pods-Triton Go.release.xcconfig"; sourceTree = "<group>"; };
+		7B77DFAB83D091955CED665D /* Pods-Triton Go.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Triton Go.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Triton Go/Pods-Triton Go.debug.xcconfig"; sourceTree = "<group>"; };
+		ACC48885EFB532A66BCA641A /* Pods_Triton_Go.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Triton_Go.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A102A60139D1621C1780053B /* Pods_Triton_Go.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E00AFCD6BA74776EDEF9462 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACC48885EFB532A66BCA641A /* Pods_Triton_Go.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1644EBAA2171A51F009FA3F5 = {
 			isa = PBXGroup;
 			children = (
 				1644EBB52171A51F009FA3F5 /* Triton Go */,
 				1644EBB42171A51F009FA3F5 /* Products */,
+				8C628D5CAEEB3D0D56CDF172 /* Pods */,
+				0E00AFCD6BA74776EDEF9462 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,7 +77,7 @@
 			children = (
 				1644EBC82171A7BF009FA3F5 /* Model */,
 				1644EBB62171A51F009FA3F5 /* AppDelegate.swift */,
-				1644EBB82171A51F009FA3F5 /* ViewController.swift */,
+				1644EBB82171A51F009FA3F5 /* MapViewController.swift */,
 				1644EBBA2171A51F009FA3F5 /* Main.storyboard */,
 				1644EBBD2171A526009FA3F5 /* Assets.xcassets */,
 				1644EBBF2171A526009FA3F5 /* LaunchScreen.storyboard */,
@@ -81,6 +96,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		8C628D5CAEEB3D0D56CDF172 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B77DFAB83D091955CED665D /* Pods-Triton Go.debug.xcconfig */,
+				4F2FEEF8747A94785EE6F2FD /* Pods-Triton Go.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -88,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1644EBC52171A526009FA3F5 /* Build configuration list for PBXNativeTarget "Triton Go" */;
 			buildPhases = (
+				166DF6BEA382F0A8DB8873BC /* [CP] Check Pods Manifest.lock */,
 				1644EBAF2171A51F009FA3F5 /* Sources */,
 				1644EBB02171A51F009FA3F5 /* Frameworks */,
 				1644EBB12171A51F009FA3F5 /* Resources */,
+				7AB1067E0B00B55CE7923036 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -147,13 +173,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		166DF6BEA382F0A8DB8873BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Triton Go-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AB1067E0B00B55CE7923036 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Triton Go/Pods-Triton Go-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/HashBuilder/HashBuilder.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HashBuilder.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Triton Go/Pods-Triton Go-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1644EBAF2171A51F009FA3F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1644EBCC2171A7E8009FA3F5 /* Trip.swift in Sources */,
-				1644EBB92171A51F009FA3F5 /* ViewController.swift in Sources */,
+				1644EBB92171A51F009FA3F5 /* MapViewController.swift in Sources */,
 				1644EBD02171B456009FA3F5 /* Location.swift in Sources */,
 				1644EBB72171A51F009FA3F5 /* AppDelegate.swift in Sources */,
 				1644EBCA2171A7E1009FA3F5 /* User.swift in Sources */,
@@ -300,6 +373,7 @@
 		};
 		1644EBC62171A526009FA3F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B77DFAB83D091955CED665D /* Pods-Triton Go.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -318,6 +392,7 @@
 		};
 		1644EBC72171A526009FA3F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F2FEEF8747A94785EE6F2FD /* Pods-Triton Go.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

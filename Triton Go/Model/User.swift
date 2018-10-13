@@ -8,8 +8,11 @@
 
 import Foundation
 import MapKit
+import HashBuilder
 
 class User {
+  
+  var id: UInt
   
   var name: String
   var email: String
@@ -21,6 +24,16 @@ class User {
     self.email = email
     self.phoneNum = phoneNum
     self.homeAddress = homeAddress
+    
+    // building id
+    let builder = HashBuilder()
+    builder.contributeObject(name)
+    builder.contributeObject(email)
+    builder.contributeObject(phoneNum)
+    builder.contributeObject(homeAddress)
+    
+    self.id = builder.builtHash
+    
   }
   
 }
